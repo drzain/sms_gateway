@@ -15,10 +15,10 @@ var util = require('util');
 var DB1 = MySQL.createPool(
 {
 	connectionLimit : 32, 
-	host            : '192.168.88.11',
-	user            : 'crontab',
-	password        : 'remotecrontab',
-	database        : 'db_sms_pkp'
+	host            : 'HOST',
+	user            : 'username',
+	password        : 'password',
+	database        : 'db_sms'
 });
 
 function MyEmitter() {
