@@ -3,10 +3,10 @@ var http = require('http').Server(app);
 var io = require('socket.io')(http);
 var mysql = require('mysql');
 var pool = mysql.createPool({
-  host: "172.15.1.3",
-  user: "sms",
-  password: "5'+v_FC=#MDR^d^$QjW-",
-  database: "db_sms_bfs"
+  host: "HOST",
+  user: "username",
+  password: "password",
+  database: "db"
 });
 
 io.on('connection', function(socket){
