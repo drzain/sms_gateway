@@ -27,10 +27,10 @@ app.use((err, req, res, next) => {
 var DB1 = MySQL.createPool(
 {
 	connectionLimit : 32,
-	host            : '172.15.1.3',
-	user            : 'sms',
-	password        : "5'+v_FC=#MDR^d^$QjW-",
-	database        : 'db_sms_bfs'
+	host            : 'HOST',
+	user            : 'username',
+	password        : "password",
+	database        : 'db'
 });
 /*var DB2 = MySQL.createPool(
 {
@@ -144,15 +144,15 @@ app.post('/api/' + api_version + '/'+ client +'/sms', function(req, res, next) {
 										//res.send('<pre>7001</pre><pre>'+uniqueid+'</pre>');
 										console.log('success insert');*/
 
-										var userid = 'tiu';
-										var secret = 'Bs9alWLKxWlH93eo6ToL';
+										var userid = 'user';
+										var secret = 'secret';
 
 										var headersOpt = {  
 										    "content-type": "application/json",
 										};
 
 										
-										var sendurl = 'https://api.smshub.co.id/sendSms';
+										var sendurl = 'apilink';
 										
 
 										if(req.body.typesms == 'unmask'){
@@ -384,15 +384,15 @@ app.post('/api/' + api_version + '/'+ client +'/premium', function(req, res, nex
 										//res.send('<pre>7001</pre><pre>'+uniqueid+'</pre>');
 										console.log('success insert');*/
 
-										var userid = 'tiu';
-										var secret = 'Bs9alWLKxWlH93eo6ToL';
+										var userid = 'username';
+										var secret = 'secret';
 
 										var headersOpt = {  
 										    "content-type": "application/json",
 										};
 
 										
-										var sendurl = 'https://api.smshub.co.id/sendOtp';
+										var sendurl = 'linkapi';
 										
 
 										if(req.body.typesms == 'unmask'){
